@@ -1,0 +1,10 @@
+thesis_text/*.aux
+thesis_text/*.bbl
+thesis_text/*.bcf
+thesis_text/*.blg
+thesis_text/*.log
+thesis_text/*.out
+thesis_text/*.run.xml
+thesis_text/*.synctex.gz
+thesis_text/*.pdf
+
