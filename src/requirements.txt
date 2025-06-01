@@ -1,0 +1,17 @@
+numpy==2.2.3
+scipy==1.14.1
+matplotlib==3.8.4
+scikit-learn==1.6.0
+statsmodels==0.14.4
+seaborn==0.13.2
+pandas==2.2.3
+pingouin==0.5.5
+PyWavelets==1.8.0
+PyQt5==5.15.9
+pygraphviz==1.14
+pydot==3.0.3
+pydotplus==2.0.2
+PyYAML==6.0.2
+tqdm==4.67.1
+joblib==1.4.2
+networkx==3.4.2
