@@ -12,6 +12,28 @@ pyenv local 3.12.3
 ```
 ###
 
+### Setup local virtual environment
+```Bash
+python3 -m venv .venv
+source .venv/bin/activate # Linux
+source .venv\Scripts\Activate # Windows
+python -m pip install -r requirements.txt
+```
+
+### Install Megatools
+```Bash
+sudo apt install megatools
+```
+
+### Download Dataset from MEGA store ###
+
+```Bash
+mkdir data
+cd data
+megadl https://mega.nz/folder/1zMzHKLC#qTtWgbgb0_7ic7w_bKM-Kg
+```
+Note: If the above link doesn't work, contact us at hdaystest@gmail.com .
+
 ### With Conda / Mamba
 To recreate the full environment (recommended for Conda/Mamba users):
 
