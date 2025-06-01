@@ -1,4 +1,4 @@
-# masters_thesis_cognitive_science
+# MSc Thesis - Cognitive Science - Classification of quiescent LFP segments in states of epilepsy
 The master's thesis project for the MSc in Cognitive Science at NKUA. Comparison of LFP data representations for classification of quiescent segments in states of epilepsy.
 
 # Setup
@@ -23,7 +23,7 @@ or
 conda create --name myenv --file requirements-conda.txt
 ```
 
-With Pip
+### With Pip
 To install Python packages only:
 
 ```Bash
