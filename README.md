@@ -10,7 +10,6 @@ following the [Pyenv installation Guide](https://github.com/pyenv/pyenv?tab=read
 pyenv install 3.12.3
 pyenv local 3.12.3
 ```
-###
 
 ### Setup local virtual environment
 ```Bash
@@ -55,3 +54,34 @@ pip install -r requirements.txt
 
 - **src/file_paths.py**
   Centralizes all file and directory paths used by the other scripts. Be sure to replace these with the appropriate paths on your own system. Also, ensure that any directories specified for saving output files already exist to avoid runtime errors.
+
+  - **src/train_test_split.py**
+  Creates the initial train–test split using the dataset file paths. Additionally, it generates a further train–validation split from the training set, specifically for use in the n_gram_graphs.py script to build representative graphs and help reduce overfitting.
+
+ - **src/compare_params_of_representations.py**
+   Runs stratified 10-fold cross-validation across different parameter configurations for each representation to identify the optimal setup for the final experiment.
+The script saves the evaluation results as CSV files for later analysis.
+
+- **src/n_gram_graphs.py**
+   Implement the N-Gram-Graphs representation.
+
+ - **src/statistics_for_parameters_of_each_representation.py**
+   Runs statistical tests on the results produced by compare_params_of_representations.py to determine the optimal parameter configurations for each representation.
+
+    - **src/other_classifiers.py**
+   Implements the two naive baseline classifiers.
+
+    - **src/main.py**
+   Runs the main classification experiment.
+
+    - **src/statistical_test.py**
+   Perform statistical tests on the results of the main experiment to show which of the three representations performs best.
+
+    - **src/graph_bins_plot.py**
+   This script produces different plots that were used in the text and presentation of the thesis.
+
+    - **src/misc.py**
+   Miscellaneous script used for different purposes, most importantly to compare statistically the amplitudes of the different classes.
+
+    - **src/animations.py**
+   This script produces a short animation that was used in the presentation of the thesis, as a visual assistance when explaining the concept of autoregressive modeling.
