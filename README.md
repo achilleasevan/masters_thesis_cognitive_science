@@ -50,3 +50,8 @@ To install Python packages only:
 ```Bash
 pip install -r requirements.txt
 ```
+
+# Script Descriptions and Usage
+
+- **src/file_paths.py**
+  Centralizes all file and directory paths used by the other scripts. Be sure to replace these with the appropriate paths on your own system. Also, ensure that any directories specified for saving output files already exist to avoid runtime errors.
