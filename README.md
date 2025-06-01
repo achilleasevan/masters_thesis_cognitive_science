@@ -17,7 +17,6 @@ pyenv local 3.12.3
 python3 -m venv .venv
 source .venv/bin/activate # Linux
 source .venv\Scripts\Activate # Windows
-python -m pip install -r requirements.txt
 ```
 
 ### Install Megatools
